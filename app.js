@@ -5,7 +5,7 @@ $(function(){
         scrollOffset = $(window).scrollTop();
 
 
-    /* Header fixed */   
+   
     checkScroll(scrollOffset);
 
     $(window).on("scroll",function(){
@@ -22,7 +22,7 @@ $(function(){
         }
     }
 
-    /* smooth scroll (плавный скролл) */
+   
     $("[data-scroll").on("click",function(event){
             event.preventDefault();
             var $this = $(this),
@@ -36,7 +36,7 @@ $(function(){
     });
 
 
-    /*Menu nav toggle*/
+  
 
     $("#nav_toggle").on("click", function(event){
         event.preventDefault();
@@ -45,14 +45,14 @@ $(function(){
     });
 
 
-    /* Collapse*/
+  
     $("[data-collapse]").on('click', function(event){
         event.preventDefault();
         var $this = $(this),
             blockId = $this.data("collapse");
         $(blockId).slideToggle();
     });
-    /* Slider  */
+   
     $("[data-slider]").slick({
         Infinity: true,
         fade: false,
